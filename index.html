@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh_CN" class="theme-default">
+<head>
+    <!--可解释中文\-->
+    <meta charset="UTF-8">
+    <!--标题写法-->
+    <title>我的书签</title>
+    <!--默认标记的链接-->
+    <base href="http://www.w3school.com.cn/images/" />
+    <base target="_blank" />
+    <!--定义html呈现的样式 蓝色背景 黑色字体-->
+    <style type="text/css">
+        body {background-color:cornflowerblue}
+        p {color:black}
+    </style>
+</head>
+<body>
+<!--居中标题和段落-->
+<h1 align="center">李元彬导航页</h1>
+<p align="center">欢迎访问使用</p>
+<br>
+<hr/>
+<!--
+定义标题背景色
+定义段落背景色
+定义段落背景色
+-->
+<h2 style="background-color:blueviolet">出来混要有实力</h2>
+<p style="background-color:green">原来是小瘪三.</p>
+<br>
+<!--插入了图片 附带了链接 前者是地址 后者是图片-->
+<a href="http://liyuanbin.com:3040"><img src="https://img0.baidu.com/it/u=2195961740,406163175&fm=253&fmt=auto&app=138&f=JPEG?w=480&h=270" width="250" height="150" alt = 3040>3040</a>
+<a href="http://liyuanbin.com:3050"><img src="https://img1.baidu.com/it/u=2995335620,900250625&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=313" width="250" height="150" alt = 3050>3050</a>
+<a href="http://liyuanbin.com:3060"><img src="https://img0.baidu.com/it/u=3462000029,647009431&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500" width="250" height="150" alt = 3060>在线电影</a>
+<a href="http://liyuanbin.com:3070"><img src="https://www.alistdaily.com/wp-content/uploads/2018/08/Alist-Tag-Page_AList_gred.jpg" width="250" height="150" alt = 3070>公开云盘</a>
+<br>
+<!--地址\图片\长宽\描述-->
+<a href="http://liyuanbin.vip:5000"><img src="https://tse1-mm.cn.bing.net/th/id/OIP-C._BpdTWTyyZux5ILtPy88nQHaDf?w=311&h=164&c=7&r=0&o=5&pid=1.7" width="250" height="150"alt="">5000</a>
+<a href="http://liyuanbin.vip:5000/note"><img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.goBesx6klf3zSAh0Zl9UnwHaED?w=287&h=180&c=7&r=0&o=5&pid=1.7" width="250" height="150" alt="">Note</a>
+<a href="http://liyuanbin.vip:5000/drive"><img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.rc5dj7mHnmsqN73-3bm69QHaEK?w=324&h=182&c=7&r=0&o=5&pid=1.7" width="250" height="150"alt="">群辉云盘</a>
+<a href="http://liyuanbin.vip:5000/file"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/9d/50/f8/9d50f855-f956-65ed-d154-79fc72f51a0a/source/200x200bb.jpg" width="250" height="150"alt="">群辉文件</a>
+
+    <p>春眠不觉晓<br />处处闻啼鸟<br />夜来风雨声<br>花落知多少</p>
+<!--	<i>春眠不觉晓<br />处处闻啼鸟<br />夜来风雨声<br>花落知多少</i>-->
+<!--表单测试默认宽度是20-->
+<h2>表单演示</h2>
+<!--
+Action 属性
+action 属性定义提交表单时要执行的操作。
+通常，当用户单击“提交”按钮时，表单数据将发送到服务器上的文件中。
+在下面的例子中，表单数据被发送到名为 "action_page.php" 的文件。该文件包含处理表单数据的服务器端脚本：
+-->
+<form action="../one.php" target="_blank" >
+    <!--<fieldset> 元素组合表单中的相关数据
+<legend> 元素为 <fieldset> 元素定义标题。-->
+    <fieldset>
+        <legend>表单标题 information:</legend>
+    </fieldset>
+    <!--类型\名字\默认描述缺一不可-->
+    体验评价:<br>
+    <input type="text" name="firstname" value="还不错">
+    <br>
+    更多意见:<br>
+    <input type="text" name="lastname" value="暂无">
+    <br>
+    <!--单选测试 <input type="radio"> 定义单选按钮。
+    定义单选按钮\名字\输出名
+-->
+    <input type="radio" name="name" value="单选" checked>优秀
+    <input type="radio" name="name" value="单选2">良好
+    <input type="radio" name="name" value="单选3">差评
+    <input type="text"  name="name" value="单选4">
+
+    <br><br>
+    <!--提交按钮-->
+    <input type="submit" value="提交">
+    
+</form>
+
+</body>
+</html>
