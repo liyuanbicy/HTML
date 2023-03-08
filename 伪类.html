@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类</title>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+            background-color: black;
+            height: 60px;
+            width: 160px;
+            list-style: none;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+        }
+
+        li:hover {
+            background-color: red;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        div {
+            *zoom: 1;
+            border: 1px solid red;
+            height: 300px;
+            width: 300px;
+            background-color: aliceblue;
+        }
+
+        div::after {
+            /*伪元素是行内元素 正常浏览器清除浮动方法*/
+            content: "";
+            display: block;
+            clear: both;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .b1 {
+            height: 100px;
+            width: 100px;
+            float: left;
+            background-color: yellow;
+
+        }
+
+        .b2 {
+            height: 100px;
+            width: 100px;
+            float: right;
+            background-color: orange;
+
+        }
+
+        .bom {
+            height: 60px;
+            width: 100%;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a href="http://jd.com">京东购物</a>
+
+    <ul>
+        <li>实战</li>
+        <li>课程</li>
+        <li>计划</li>
+        <li><a href="http://baidu.com">购物</a></li>
+    </ul> -->
+    <div>
+        <div class="b1"></div>
+        <div class="b2"></div>
+    </div>
+    <div class="bom"></div>
+    <div class="bom"></div>
+
+</body>
+
+</html>

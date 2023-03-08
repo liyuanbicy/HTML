@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background: url(img/index.png) no-repeat center fixed;
+            /* 最大背景 */
+            background-size: cover;
+        }
+
+        /* 多背景演示 */
+        .aa {
+   
+            background-image: url(img/capsule_genesis.jpg), url(img/capsule_genesis_two.jpg);
+            /* 定位 */
+            background-position: bottom left,right top;
+            /* 不重复 */
+            background-repeat: no-repeat, no-repeat;
+            /* 多背景尺寸 */
+            background-size: auto, auto;
+            color: white;
+            font-size: 18px;
+            /* 最小尺寸 */
+            min-width: 900px;
+
+        }
+        .cc {
+            border: 10px dotted black;
+            padding: 35px;
+            background-color: green;
+            /* 背景色绘制起始点 */
+            background-clip: content-box;
+            /* 和前者一样 只是背景色的起止点 */
+            background-origin: content-box,
+                border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="aa">
+        <h2>多背景练习</h2>
+        <p>涉及知识面有点广</p>
+ 
+        <pre>
+                /* border-box - 背景图片从边框的左上角开始
+                padding-box -背景图像从内边距边缘的左上角开始(默认)
+                content-box - 背景图片从内容的左上角开始 */
+            </pre>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD轮播图演示</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            border: 1px solid red;
+        }
+        /* 外框样式 */
+        .box{
+            margin: 50px auto;
+            width: 520px;
+            height: 280px;
+            position: relative;
+        }
+        /* 图片样式 */
+        img{
+            width: 520px;
+            height: 280px;
+        }
+        /* 列表外框 */
+        ul{
+            margin: 0;
+            padding: 5px 10px 5px 0;
+            position: absolute;
+            left: 220px;
+            top: 240px;
+            background-color:rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+
+        }
+        /* 列表样式 */
+        li{
+            list-style: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: gray;
+            float: left;
+            margin-left: 5px;
+
+
+        }
+        /* 选中高亮 */
+        .active{
+            background-color: red;
+        }
+        /* 翻页定位 */
+        .span{
+            width: 520px;
+            position: absolute;
+            top: 140px;
+        }
+        /* 翻页样式 */
+        span{
+            width: 20px;
+            height: 30px;
+            display: block;
+            text-align: center;
+            background-color:rgba(5,5,5,0.5);
+            line-height: 30px;
+
+
+        }
+        .left{
+
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 外部盒子 -->
+    <div class="box">
+        <!-- 图片盒子 -->
+        <div class="img">
+            <img src="img/index.png" alt="">
+        </div>
+        <!-- 翻页外框 -->
+        <div class="span">
+            <!-- 左右翻页 -->
+            <span class="left"><</span>
+            <span class="right">></span>
+        </div>
+        <!-- 按钮样式 -->
+        <ul>
+            <!-- 高亮按钮 -->
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

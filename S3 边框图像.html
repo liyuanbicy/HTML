@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.aa {
+			height: 100px;
+			width: 300px;
+			border-radius: 10px;
+			margin: 10px;
+			padding: 10px;
+			background-color: greenyellow;
+		}
+
+		.bb {
+			height: 300px;
+			width: 300px;
+			border-radius: 50%;
+			margin: 10px;
+			padding: 10px;
+			background-color: black;
+		}
+
+		.img {
+			/* 透明边框 */
+			border: 10px solid transparent;
+			/* 图片边框拉伸 */
+			border-image: url(i/border.png) 30 round;
+
+			height: 300px;
+			width: 300px;
+			padding: 15px;
+		}
+
+		.img1 {
+			height: 300px;
+			width: 300px;
+			/* 先起一个透明边框 */
+			border: 10px solid transparent;
+			padding: 15px;
+			/* 中间部分拉绳  数字代表裁剪数值*/
+			/* stre是拉绳 */
+			border-image: url(i/border.png) 30 stretch;
+		}
+		
+		.img2 {
+			height: 300px;
+			width: 300px;
+			/* 先起一个透明边框 */
+			border: 10px solid transparent;
+			padding: 15px;
+			/* 中间部分拉绳  数字代表裁剪数值*/
+			/* round是重复 */
+			border-image: url(i/border.png) 10 round;
+		}
+		.img3 {
+			height: 300px;
+			width: 300px;
+			/* 先起一个透明边框 */
+			border: 10px solid transparent;
+			padding: 15px;
+			/* 中间部分拉绳  数字代表裁剪数值*/
+			/* round是重复 */
+			border-image: url(i/border.png) 10 repeat;
+
+		}
+	</style>
+</head>
+
+<body>
+
+
+
+	<div class="img2"></div>
+	<div class="img3"></div>
+</body>
+
+</html>

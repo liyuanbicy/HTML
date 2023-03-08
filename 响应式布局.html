@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.top {
+			height: 60px;
+			text-align: center;
+			background-color: antiquewhite;
+		}
+
+		.site {
+			/* 溢出隐藏 */
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		.site a {
+			text-align: center;
+			text-decoration: none;
+			display: block;
+			float: left;
+			color: white;
+			/* 上下 左右内边距 */
+			padding: 14px 16px;
+
+		}
+
+		.site a:hover {
+			color: black;
+			background-color: white;
+		}
+
+		/* 创建三个彼此相邻浮动的相等列 */
+		.column {
+			float: left;
+			width: 33.33%;
+		}
+
+		/* 清除列后的浮动 */
+		.text:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* 响应式布局 - 使三列堆叠在一起,而不是在较小的屏幕(600px 宽或更小)上彼此相邻 */
+		@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="top">top</div>
+	<div class="site">
+		<a href="#">link</a>
+		<a href="#">link</a>
+		<a href="#">link</a>
+
+	</div>
+	<!-- 清除浮动的 -->
+	<div class="text">
+		<div class="column">
+		  <h2>Column</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+		</div>
+		
+		<div class="column">
+		  <h2>Column</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+		</div>
+		
+		<div class="column">
+		  <h2>Column</h2>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+		</div>
+	  </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+        }
+
+        /* 给父级元素增加清楚浮动 */
+        .clearfix:after {
+            /*伪元素是行内元素 正常浏览器清除浮动方法*/
+            content: "";
+            display: block;
+            clear: both;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            *zoom: 1;
+            /*ie6清除浮动的方式 *号只有IE6-IE7执行,其他浏览器不执行*/
+        }
+
+        .zuo {
+            height: 60px;
+            width: 100px;
+            float: left;
+            background-color: yellow;
+        }
+
+        .you {
+            height: 60px;
+            width: 200px;
+            float: right;
+            background-color: red;
+        }
+
+        .c {
+            clear: both;
+        }
+
+        .footer {
+            height: 60px;
+            width: 500px;
+            background-color: black;
+        }
+
+        /* 内容之后插入 */
+        a::after {
+            content: "百度";
+            color: red;
+        }
+
+        /* 内容之前插入 */
+        a::before {
+            content: "京东购物";
+        }
+    </style>
+
+<body>
+    <a href="#">搜索一下</a>
+    <!-- 让他具有清楚浮动的功能 -->
+    <div class="box clearfix">
+        <div class="zuo">左边</div>
+        <div class="you">右边</div>
+        <!-- <div class="c"></div> -->
+    </div>
+    <!-- 上级浮动清除 -->
+    <!-- 父级清除浮动 -->
+    <div class="footer"></div>
+
+
+
+</body>
